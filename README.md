@@ -1,27 +1,33 @@
 # Portfolio
 
-Static web portfolio built with FastAPI.
+Static portfolio site. No build step required — pure HTML/CSS/JS.
 
-## Setup
+## Local
 
-```bash
-conda env create -f environment.yml
-conda activate portfolio
-```
-
-## Run
+Open `index.html` directly in the browser, or serve it with any static server:
 
 ```bash
-uvicorn main:app --reload
+# Python
+python -m http.server 8000
 ```
 
-Open [http://localhost:8000](http://localhost:8000) in your browser.
+Then open [http://localhost:8000](http://localhost:8000).
 
-## Pages
+## Deploy (GitHub Pages)
 
-| Route | Description |
-|-------|-------------|
-| `/` | Home |
-| `/about` | About |
-| `/softwares` | Softwares |
-| `/research` | Research |
+1. Push the repo to GitHub
+2. Go to **Settings → Pages**
+3. Source: branch `main`, folder `/ (root)`
+4. The site will be live at `https://aouei.github.io/portfolio/`
+
+## Structure
+
+```
+├── index.html       Home
+├── about.html       About
+├── softwares.html   Projects
+├── research.html    Research
+└── static/
+    ├── style.css
+    └── main.js
+```
