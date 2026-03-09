@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research &mdash; Portfolio</title>
+    <title>Research &mdash; Sergio Heredia</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <nav>
         <a href="index.html" class="logo">Aouei</a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-es">Inicio</span></a></li>
+            <li><a href="about.html"><span class="t-en">About</span><span class="t-es">Sobre mí</span></a></li>
             <li><a href="softwares.html">Softwares</a></li>
-            <li><a href="research.html">Research</a></li>
+            <li><a href="research.html"><span class="t-en">Research</span><span class="t-es">Investigación</span></a></li>
         </ul>
+        <button id="lang-toggle" class="btn-lang">ES</button>
     </nav>
 
     <main>
-        <p class="section-label">Publications</p>
-        <h1>Research</h1>
-        <h2>Peer-reviewed publications and scientific work.</h2>
+        <p class="section-label t-en">Publications</p>
+        <p class="section-label t-es">Publicaciones</p>
+
+        <h1 class="t-en">Research</h1>
+        <h1 class="t-es">Investigación</h1>
+
+        <h2 class="t-en">Peer-reviewed publications and scientific work.</h2>
+        <h2 class="t-es">Publicaciones científicas revisadas por pares.</h2>
 
         <div class="cards">
 
@@ -29,7 +35,8 @@
                 <p>Alejandro Román, <strong>Sergio Heredia</strong>, Anna E. Windle, Antonio Tovar-Sánchez, Gabriel Navarro</p>
                 <p style="margin-top: 0.3rem;"><em>Remote Sensing</em> &mdash; 2024</p>
                 <div class="card-meta">
-                    <span class="tag">Published</span>
+                    <span class="tag t-en">Published</span>
+                    <span class="tag t-es">Publicado</span>
                     <span class="tag">UAV</span>
                     <span class="tag">Remote Sensing</span>
                 </div>
@@ -43,9 +50,11 @@
                 <p>S. P. Viaña-Borja, <strong>S. Heredia</strong>, G. Navarro, X. Santamarta-Benito, N. Araujo-Suarez, I. Caballero</p>
                 <p style="margin-top: 0.3rem;"><em>Coastal Engineering</em> &mdash; 2025</p>
                 <div class="card-meta">
-                    <span class="tag">Published</span>
+                    <span class="tag t-en">Published</span>
+                    <span class="tag t-es">Publicado</span>
                     <span class="tag">UAV</span>
-                    <span class="tag">Bathymetry</span>
+                    <span class="tag t-en">Bathymetry</span>
+                    <span class="tag t-es">Batimetría</span>
                 </div>
                 <div class="card-links">
                     <a href="https://doi.org/10.1016/j.coastaleng.2025.104854" target="_blank">&#x2197; DOI: 10.1016/j.coastaleng.2025.104854</a>
@@ -56,9 +65,11 @@
                 <h3>Recursive Bathymetric Mapping of Tidal Inlets Using Sentinel-2</h3>
                 <p>Isabel Caballero, <strong>Sergio Heredia</strong>, Susana Costas, Richard P. Stumpf</p>
                 <div class="card-meta">
-                    <span class="tag">Under Review</span>
+                    <span class="tag t-en">Under Review</span>
+                    <span class="tag t-es">En revisión</span>
                     <span class="tag">Sentinel-2</span>
-                    <span class="tag">Bathymetry</span>
+                    <span class="tag t-en">Bathymetry</span>
+                    <span class="tag t-es">Batimetría</span>
                 </div>
             </div>
 
@@ -66,9 +77,11 @@
                 <h3>Bathymetric mapping of intertidal flats using the Sentinel-2A/B/C satellites to support shellfish harvesting</h3>
                 <p>Isabel Caballero, <strong>Sergio Heredia</strong>, Irene Alejo, Nicolás Villacieros-Robineau, Miguel Ángel Nombela, Rita González-Villanueva</p>
                 <div class="card-meta">
-                    <span class="tag">Under Review</span>
+                    <span class="tag t-en">Under Review</span>
+                    <span class="tag t-es">En revisión</span>
                     <span class="tag">Sentinel-2</span>
-                    <span class="tag">Intertidal</span>
+                    <span class="tag t-en">Intertidal</span>
+                    <span class="tag t-es">Intermareal</span>
                 </div>
             </div>
 
@@ -76,7 +89,8 @@
                 <h3>Physics-informed machine learning for optically deep-water detection using Sentinel-2</h3>
                 <p><strong>Sergio Heredia</strong>, Paola Barba-Ceballos, Isabel Caballero</p>
                 <div class="card-meta">
-                    <span class="tag">Under Review</span>
+                    <span class="tag t-en">Under Review</span>
+                    <span class="tag t-es">En revisión</span>
                     <span class="tag">Machine Learning</span>
                     <span class="tag">Physics-informed</span>
                 </div>
@@ -86,21 +100,29 @@
 
         <hr class="divider">
 
-        <!-- Highlights -->
-        <p class="section-label">Highlights</p>
+        <p class="section-label t-en">Highlights</p>
+        <p class="section-label t-es">Destacados</p>
+
         <div class="cards">
             <div class="card">
                 <h3>ESA Living Planet Symposium</h3>
-                <p>Poster presenter &mdash; Vienna, Austria</p>
+                <p class="t-en">Poster presenter &mdash; Vienna, Austria</p>
+                <p class="t-es">Presentación de póster &mdash; Viena, Austria</p>
                 <div class="card-meta"><span class="tag">2025</span></div>
             </div>
             <div class="card">
-                <h3>SDB with Python</h3>
-                <p>Invited talk &mdash; University of Santiago, Chile</p>
+                <h3>
+                    <span class="t-en">SDB with Python &mdash; Invited Talk</span>
+                    <span class="t-es">SDB con Python &mdash; Charla invitada</span>
+                </h3>
+                <p>University of Santiago, Chile</p>
                 <div class="card-meta"><span class="tag">2025</span></div>
             </div>
             <div class="card">
-                <h3>Research Stay &mdash; SDB Techniques</h3>
+                <h3>
+                    <span class="t-en">Research Stay &mdash; SDB Techniques</span>
+                    <span class="t-es">Estancia de investigación &mdash; Técnicas SDB</span>
+                </h3>
                 <p>University of Vigo, Spain</p>
                 <div class="card-meta"><span class="tag">2025</span></div>
             </div>
@@ -108,7 +130,14 @@
     </main>
 
     <footer>
-        <p>Built with HTML &amp; CSS &mdash; <a href="https://github.com/Aouei/portfolio" target="_blank">Source</a></p>
+        <p>
+            <span class="t-en">Built with HTML &amp; CSS &mdash;</span>
+            <span class="t-es">Hecho con HTML &amp; CSS &mdash;</span>
+            <a href="https://github.com/Aouei/portfolio" target="_blank">
+                <span class="t-en">Source</span>
+                <span class="t-es">Código fuente</span>
+            </a>
+        </p>
     </footer>
 
     <script src="static/main.js"></script>

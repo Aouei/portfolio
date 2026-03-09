@@ -26,6 +26,25 @@ body {
     min-height: 100vh;
 }
 
+/* ── i18n toggle ── */
+.t-es { display: none; }
+body.es .t-en { display: none; }
+body.es .t-es { display: revert; }
+
+.btn-lang {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: color 0.2s, border-color 0.2s;
+}
+.btn-lang:hover { color: var(--text); border-color: var(--accent); }
+
 /* ── Navigation ── */
 nav {
     position: fixed;

@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Softwares &mdash; Portfolio</title>
+    <title>Softwares &mdash; Sergio Heredia</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <nav>
         <a href="index.html" class="logo">Aouei</a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-es">Inicio</span></a></li>
+            <li><a href="about.html"><span class="t-en">About</span><span class="t-es">Sobre mí</span></a></li>
             <li><a href="softwares.html">Softwares</a></li>
-            <li><a href="research.html">Research</a></li>
+            <li><a href="research.html"><span class="t-en">Research</span><span class="t-es">Investigación</span></a></li>
         </ul>
+        <button id="lang-toggle" class="btn-lang">ES</button>
     </nav>
 
     <main>
         <p class="section-label">Open Source</p>
         <h1>Softwares</h1>
-        <h2>Python libraries and tools for geospatial analysis and remote sensing.</h2>
+
+        <h2 class="t-en">Python libraries and tools for geospatial analysis and remote sensing.</h2>
+        <h2 class="t-es">Librerías Python y herramientas para análisis geoespacial y teledetección.</h2>
 
         <div class="cards">
 
             <div class="card">
                 <h3>gee_acolite</h3>
-                <p>ACOLITE atmospheric correction adapted for Google Earth Engine. Enables water quality analysis and remote sensing corrections directly in GEE workflows.</p>
+                <p class="t-en">ACOLITE atmospheric correction adapted for Google Earth Engine. Enables water quality analysis and remote sensing corrections directly in GEE workflows.</p>
+                <p class="t-es">Corrección atmosférica ACOLITE adaptada para Google Earth Engine. Permite el análisis de calidad del agua y correcciones de teledetección directamente en flujos de trabajo GEE.</p>
                 <div class="card-meta">
                     <span class="tag">Python</span>
                     <span class="tag">Remote Sensing</span>
@@ -40,7 +44,8 @@
 
             <div class="card">
                 <h3>remote-sensing-satellite-downloader</h3>
-                <p>Python library to download satellite imagery (Sentinel-2, Landsat-8) using APIs like Copernicus OData. Simplifies data acquisition for remote sensing workflows.</p>
+                <p class="t-en">Python library to download satellite imagery (Sentinel-2, Landsat-8) using APIs like Copernicus OData. Simplifies data acquisition for remote sensing workflows.</p>
+                <p class="t-es">Librería Python para descargar imágenes satelitales (Sentinel-2, Landsat-8) usando APIs como Copernicus OData. Simplifica la adquisición de datos para flujos de trabajo de teledetección.</p>
                 <div class="card-meta">
                     <span class="tag">Python</span>
                     <span class="tag">Satellite Data</span>
@@ -54,7 +59,8 @@
 
             <div class="card">
                 <h3>sensingpy</h3>
-                <p>Python library built on xarray and rasterio for GIS operations and Satellite Derived Bathymetry (SDB). Designed for processing and analyzing multispectral satellite data.</p>
+                <p class="t-en">Python library built on xarray and rasterio for GIS operations and Satellite Derived Bathymetry (SDB). Designed for processing and analyzing multispectral satellite data.</p>
+                <p class="t-es">Librería Python basada en xarray y rasterio para operaciones GIS y Batimetría Derivada de Satélite (SDB). Diseñada para el procesamiento y análisis de datos satelitales multiespectrales.</p>
                 <div class="card-meta">
                     <span class="tag">Python</span>
                     <span class="tag">GIS</span>
@@ -69,7 +75,8 @@
 
             <div class="card">
                 <h3>tiledpy</h3>
-                <p>Python library for tile-based geospatial data processing.</p>
+                <p class="t-en">Python library for tile-based geospatial data processing.</p>
+                <p class="t-es">Librería Python para el procesamiento de datos geoespaciales basado en teselas.</p>
                 <div class="card-meta">
                     <span class="tag">Python</span>
                     <span class="tag">GIS</span>
@@ -82,10 +89,12 @@
 
             <div class="card">
                 <h3>python_course</h3>
-                <p>Un tutorial de Python para científicos en español. Cubre desde conceptos básicos hasta herramientas científicas como NumPy, Pandas y visualización de datos.</p>
+                <p class="t-en">A Python tutorial for scientists in Spanish. Covers fundamentals through scientific tools like NumPy, Pandas, and data visualization.</p>
+                <p class="t-es">Un tutorial de Python para científicos en español. Cubre desde conceptos básicos hasta herramientas científicas como NumPy, Pandas y visualización de datos.</p>
                 <div class="card-meta">
                     <span class="tag nb">Jupyter</span>
-                    <span class="tag">Education</span>
+                    <span class="tag t-en">Education</span>
+                    <span class="tag t-es">Educación</span>
                 </div>
                 <div class="card-links">
                     <a href="https://github.com/Aouei/python_course" target="_blank">&#x2197; GitHub</a>
@@ -95,7 +104,8 @@
 
             <div class="card">
                 <h3>Physics-informed-ML-ODW</h3>
-                <p>Exploration of physics-informed machine learning methods applied to oceanographic and environmental data workflows.</p>
+                <p class="t-en">Exploration of physics-informed machine learning methods applied to oceanographic and environmental data workflows.</p>
+                <p class="t-es">Exploración de métodos de aprendizaje automático informados por física aplicados a flujos de datos oceanográficos y medioambientales.</p>
                 <div class="card-meta">
                     <span class="tag nb">Jupyter</span>
                     <span class="tag">Machine Learning</span>
@@ -111,7 +121,14 @@
     </main>
 
     <footer>
-        <p>Built with HTML &amp; CSS &mdash; <a href="https://github.com/Aouei/portfolio" target="_blank">Source</a></p>
+        <p>
+            <span class="t-en">Built with HTML &amp; CSS &mdash;</span>
+            <span class="t-es">Hecho con HTML &amp; CSS &mdash;</span>
+            <a href="https://github.com/Aouei/portfolio" target="_blank">
+                <span class="t-en">Source</span>
+                <span class="t-es">Código fuente</span>
+            </a>
+        </p>
     </footer>
 
     <script src="static/main.js"></script>

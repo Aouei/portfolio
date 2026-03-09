@@ -3,59 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About &mdash; Portfolio</title>
+    <title>About &mdash; Sergio Heredia</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <nav>
         <a href="index.html" class="logo">Aouei</a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-es">Inicio</span></a></li>
+            <li><a href="about.html"><span class="t-en">About</span><span class="t-es">Sobre mí</span></a></li>
             <li><a href="softwares.html">Softwares</a></li>
-            <li><a href="research.html">Research</a></li>
+            <li><a href="research.html"><span class="t-en">Research</span><span class="t-es">Investigación</span></a></li>
         </ul>
+        <button id="lang-toggle" class="btn-lang">ES</button>
     </nav>
 
     <main>
-        <p class="section-label">About</p>
+        <p class="section-label t-en">About</p>
+        <p class="section-label t-es">Sobre mí</p>
+
         <h1>Sergio Heredia Carmona</h1>
-        <h2>Python developer specialized in Artificial Intelligence and Geographic Information Systems</h2>
+
+        <h2 class="t-en">Python developer specialized in Artificial Intelligence and Geographic Information Systems</h2>
+        <h2 class="t-es">Desarrollador Python especializado en Inteligencia Artificial y Sistemas de Información Geográfica</h2>
 
         <hr class="divider">
 
         <!-- Experience -->
-        <p class="section-label">Experience</p>
-        <div class="cards">
+        <p class="section-label t-en">Experience</p>
+        <p class="section-label t-es">Experiencia</p>
 
+        <div class="cards">
             <div class="card">
-                <h3>Technical Staff &mdash; Instituto de Ciencias Marinas de Andalucía (CSIC)</h3>
-                <p>Software development for UAV drone applications in marine remote sensing. Bathymetry workflows using UAV-derived and satellite-derived data. Developed Python packages for satellite imagery downloading, image processing, and Google Earth Engine integration.</p>
+                <h3>
+                    <span class="t-en">Technical Staff &mdash; Instituto de Ciencias Marinas de Andalucía (CSIC)</span>
+                    <span class="t-es">Personal Técnico &mdash; Instituto de Ciencias Marinas de Andalucía (CSIC)</span>
+                </h3>
+                <p class="t-en">Software development for UAV drone applications in marine remote sensing. Bathymetry workflows using UAV-derived and satellite-derived data. Developed Python packages for satellite imagery downloading, image processing, and Google Earth Engine integration.</p>
+                <p class="t-es">Desarrollo de software para aplicaciones con drones UAV en teledetección marina. Flujos de trabajo batimétricos con datos UAV y satelitales. Desarrollo de paquetes Python para descarga de imágenes satelitales, procesamiento de imágenes e integración con Google Earth Engine.</p>
                 <div class="card-meta">
-                    <span class="tag">Sep 2022 &mdash; Present</span>
+                    <span class="tag t-en">Sep 2022 &mdash; Present</span>
+                    <span class="tag t-es">Sep 2022 &mdash; Presente</span>
                     <span class="tag">Puerto Real, Cádiz</span>
                 </div>
             </div>
 
             <div class="card">
                 <h3>Salesforce Developer &mdash; Omega CRM Consulting (Merkle)</h3>
-                <p>Database design and CRM development for nonprofit organizations including UNHCR and AECC.</p>
+                <p class="t-en">Database design and CRM development for nonprofit organizations including UNHCR and AECC.</p>
+                <p class="t-es">Diseño de bases de datos y desarrollo CRM para organizaciones sin ánimo de lucro como ACNUR y AECC.</p>
                 <div class="card-meta">
                     <span class="tag">Oct 2021 &mdash; Jul 2022</span>
                     <span class="tag">Granada, Spain</span>
                 </div>
             </div>
-
         </div>
 
         <hr class="divider">
 
         <!-- Education -->
-        <p class="section-label">Education</p>
-        <div class="cards">
+        <p class="section-label t-en">Education</p>
+        <p class="section-label t-es">Educación</p>
 
+        <div class="cards">
             <div class="card">
-                <h3>MS in Artificial Intelligence</h3>
+                <h3>
+                    <span class="t-en">MS in Artificial Intelligence</span>
+                    <span class="t-es">Máster en Inteligencia Artificial</span>
+                </h3>
                 <p>Instituto Europeo de Posgrado</p>
                 <div class="card-meta">
                     <span class="tag">Oct 2024 &mdash; Nov 2025</span>
@@ -64,7 +79,10 @@
             </div>
 
             <div class="card">
-                <h3>BS in Computer Engineering</h3>
+                <h3>
+                    <span class="t-en">BS in Computer Engineering</span>
+                    <span class="t-es">Grado en Ingeniería Informática</span>
+                </h3>
                 <p>University of Granada</p>
                 <div class="card-meta">
                     <span class="tag">Sep 2015 &mdash; Feb 2021</span>
@@ -73,21 +91,26 @@
             </div>
 
             <div class="card">
-                <h3>Field Courses in Terrestrial &amp; Marine Environments</h3>
+                <h3>
+                    <span class="t-en">Field Courses in Terrestrial &amp; Marine Environments</span>
+                    <span class="t-es">Cursos de campo en entornos terrestres y marinos</span>
+                </h3>
                 <p>CSIC, Spain</p>
                 <div class="card-meta"><span class="tag">2023</span></div>
             </div>
-
         </div>
 
         <hr class="divider">
 
         <!-- Skills -->
-        <p class="section-label">Skills</p>
+        <p class="section-label t-en">Skills</p>
+        <p class="section-label t-es">Habilidades</p>
+
         <div class="cards">
             <div class="card" style="gap: 0.75rem;">
                 <div>
-                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;">Languages</p>
+                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-en">Programming languages</p>
+                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-es">Lenguajes de programación</p>
                     <div class="card-meta">
                         <span class="tag">Python</span>
                         <span class="tag">JavaScript</span>
@@ -96,7 +119,8 @@
                     </div>
                 </div>
                 <div>
-                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;">Tools</p>
+                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-en">Tools</p>
+                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-es">Herramientas</p>
                     <div class="card-meta">
                         <span class="tag">Git</span>
                         <span class="tag">GitHub</span>
@@ -104,7 +128,8 @@
                     </div>
                 </div>
                 <div>
-                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;">ML &amp; Research</p>
+                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-en">ML &amp; Research</p>
+                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-es">IA e Investigación</p>
                     <div class="card-meta">
                         <span class="tag">Sklearn</span>
                         <span class="tag">SDB</span>
@@ -114,10 +139,13 @@
                     </div>
                 </div>
                 <div>
-                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;">Languages</p>
+                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-en">Languages</p>
+                    <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-es">Idiomas</p>
                     <div class="card-meta">
-                        <span class="tag">Spanish (native)</span>
-                        <span class="tag">English (B2)</span>
+                        <span class="tag t-en">Spanish (native)</span>
+                        <span class="tag t-es">Español (nativo)</span>
+                        <span class="tag t-en">English (B2)</span>
+                        <span class="tag t-es">Inglés (B2)</span>
                     </div>
                 </div>
             </div>
@@ -126,7 +154,8 @@
         <hr class="divider">
 
         <!-- Links -->
-        <p class="section-label">Links</p>
+        <p class="section-label t-en">Links</p>
+        <p class="section-label t-es">Enlaces</p>
         <div class="card-links" style="margin-top: 0.5rem; font-size: 0.9rem;">
             <a href="https://github.com/Aouei" target="_blank">&#x2197; GitHub</a>
             <a href="https://orcid.org/0009-0003-9495-9625" target="_blank">&#x2197; ORCID</a>
@@ -135,7 +164,14 @@
     </main>
 
     <footer>
-        <p>Built with HTML &amp; CSS &mdash; <a href="https://github.com/Aouei/portfolio" target="_blank">Source</a></p>
+        <p>
+            <span class="t-en">Built with HTML &amp; CSS &mdash;</span>
+            <span class="t-es">Hecho con HTML &amp; CSS &mdash;</span>
+            <a href="https://github.com/Aouei/portfolio" target="_blank">
+                <span class="t-en">Source</span>
+                <span class="t-es">Código fuente</span>
+            </a>
+        </p>
     </footer>
 
     <script src="static/main.js"></script>

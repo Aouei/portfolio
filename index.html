@@ -3,39 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio &mdash; Sergio Heredia</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <nav>
         <a href="index.html" class="logo">Aouei</a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html"><span class="t-en">Home</span><span class="t-es">Inicio</span></a></li>
+            <li><a href="about.html"><span class="t-en">About</span><span class="t-es">Sobre mí</span></a></li>
             <li><a href="softwares.html">Softwares</a></li>
-            <li><a href="research.html">Research</a></li>
+            <li><a href="research.html"><span class="t-en">Research</span><span class="t-es">Investigación</span></a></li>
         </ul>
+        <button id="lang-toggle" class="btn-lang">ES</button>
     </nav>
 
     <main>
         <section class="hero">
-            <p class="section-label">Welcome</p>
-            <h1>Hi, I'm Sergio Heredia Carmona</h1>
-            <p class="subtitle">
+            <p class="section-label t-en">Welcome</p>
+            <p class="section-label t-es">Bienvenido</p>
+
+            <h1>
+                <span class="t-en">Hi, I'm Sergio Heredia Carmona</span>
+                <span class="t-es">Hola, soy Sergio Heredia Carmona</span>
+            </h1>
+
+            <p class="subtitle t-en">
                 Computer Engineer &amp; Technical Staff at Instituto de Ciencias Marinas de Andalucía.
                 I build Python tools for remote sensing, satellite data processing, and machine learning
                 applied to marine and coastal environments.
             </p>
+            <p class="subtitle t-es">
+                Ingeniero Informático y Técnico en el Instituto de Ciencias Marinas de Andalucía.
+                Desarrollo herramientas Python para teledetección, procesamiento de imágenes satelitales
+                y aprendizaje automático aplicado a entornos marinos y costeros.
+            </p>
+
             <div class="hero-links">
-                <a href="softwares.html" class="btn btn-primary">View projects</a>
+                <a href="softwares.html" class="btn btn-primary">
+                    <span class="t-en">View projects</span>
+                    <span class="t-es">Ver proyectos</span>
+                </a>
                 <a href="https://github.com/Aouei" target="_blank" class="btn btn-ghost">GitHub</a>
-                <a href="about.html" class="btn btn-ghost">About me</a>
+                <a href="about.html" class="btn btn-ghost">
+                    <span class="t-en">About me</span>
+                    <span class="t-es">Sobre mí</span>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Built with HTML &amp; CSS &mdash; <a href="https://github.com/Aouei/portfolio" target="_blank">Source</a></p>
+        <p>
+            <span class="t-en">Built with HTML &amp; CSS &mdash;</span>
+            <span class="t-es">Hecho con HTML &amp; CSS &mdash;</span>
+            <a href="https://github.com/Aouei/portfolio" target="_blank">
+                <span class="t-en">Source</span>
+                <span class="t-es">Código fuente</span>
+            </a>
+        </p>
     </footer>
 
     <script src="static/main.js"></script>
