@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(rm \"/c/Users/sergi/Documents/repos/portfolio/main.py\" \"/c/Users/sergi/Documents/repos/portfolio/environment.yml\")",
-      "Bash(rm -rf \"/c/Users/sergi/Documents/repos/portfolio/templates\")"
+      "Bash(rm -rf \"/c/Users/sergi/Documents/repos/portfolio/templates\")",
+      "WebFetch(domain:pub.orcid.org)"
     ]
   }
 }
