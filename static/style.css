@@ -149,7 +149,7 @@ a:hover { text-decoration: underline; }
 /* ── Project cards ── */
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -165,8 +165,41 @@ a:hover { text-decoration: underline; }
     transition: border-color 0.2s;
 }
 
-.card:hover {
-    border-color: var(--accent-dim);
+/* ── Flip variant ── */
+.card-flip {
+    perspective: 1000px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.card-inner {
+    display: grid;
+    grid-template-areas: "face";
+    transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+    grid-area: face;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: var(--radius);
+    padding: 1.4rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-front {
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: var(--accent-dim);
+    border: 1px solid var(--accent);
 }
 
 .card-meta {
