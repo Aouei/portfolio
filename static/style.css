@@ -57,8 +57,13 @@ nav {
     z-index: 100;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 2.5rem;
+}
+
+#lang-toggle {
+    position: absolute;
+    right: 2.5rem;
 }
 
 nav .logo {
@@ -312,8 +317,30 @@ footer {
     border-top: 1px solid var(--border);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     h1 { font-size: 2rem; }
-    nav { padding: 0 1.25rem; }
-    nav ul { gap: 1.25rem; }
+    h2 { font-size: 1.15rem; }
+
+    nav { padding: 0 1rem; }
+    nav ul { gap: 1rem; }
+    nav ul a { font-size: 0.8rem; }
+    #lang-toggle { right: 1rem; }
+
+    main {
+        padding-top: calc(var(--nav-h) + 2rem);
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .hero { padding-top: 1rem; }
+    .hero .subtitle { font-size: 0.95rem; }
+
+    .card { padding: 1rem 1.2rem; }
+    .divider { margin: 2rem 0; }
+}
+
+@media (max-width: 400px) {
+    h1 { font-size: 1.6rem; }
+    nav ul { gap: 0.6rem; }
+    nav ul a { font-size: 0.72rem; }
 }
