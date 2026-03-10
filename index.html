@@ -8,47 +8,468 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">Sergio Heredia</a>
+        <a href="#hero" class="logo">Sergio Heredia</a>
         <ul>
-            <li><a href="index.html"><span class="t-en">Home</span><span class="t-es">Inicio</span></a></li>
-            <li><a href="about.html"><span class="t-en">About</span><span class="t-es">Sobre mí</span></a></li>
-            <li><a href="softwares.html">Softwares</a></li>
-            <li><a href="research.html"><span class="t-en">Research</span><span class="t-es">Investigación</span></a></li>
+            <li><a href="#hero"><span class="t-en">Home</span><span class="t-es">Inicio</span></a></li>
+            <li><a href="#about"><span class="t-en">About</span><span class="t-es">Sobre mí</span></a></li>
+            <li><a href="#softwares">Softwares</a></li>
+            <li><a href="#research"><span class="t-en">Research</span><span class="t-es">Investigación</span></a></li>
         </ul>
         <button id="lang-toggle" class="btn-lang">ES</button>
     </nav>
 
     <main>
-        <section class="hero">
-            <p class="section-label t-en">Welcome</p>
-            <p class="section-label t-es">Bienvenido</p>
 
-            <h1>
-                <span class="t-en">Hi, I'm Sergio Heredia Carmona</span>
-                <span class="t-es">Hola, soy Sergio Heredia Carmona</span>
-            </h1>
+        <!-- ── Hero ── -->
+        <section class="hero" id="hero">
+            <h1>Sergio Heredia Carmona</h1>
+
+            <h2 class="t-en">Python developer specialized in Artificial Intelligence and Geographic Information Systems</h2>
+            <h2 class="t-es">Desarrollador Python especializado en Inteligencia Artificial y Sistemas de Información Geográfica</h2>
 
             <p class="subtitle t-en">
-                Computer Engineer &amp; I build Python tools for remote sensing, satellite data processing, and machine learning
+                I build Python tools for remote sensing, satellite data processing, and machine learning
                 applied to marine and coastal environments.
             </p>
             <p class="subtitle t-es">
-                Ingeniero Informático. Desarrollo herramientas Python para teledetección, procesamiento de imágenes satelitales
+                Desarrollo herramientas Python para teledetección, procesamiento de imágenes satelitales
                 y aprendizaje automático aplicado a entornos marinos y costeros.
             </p>
 
             <div class="hero-links">
-                <a href="softwares.html" class="btn btn-primary">
+                <a href="#softwares" class="btn btn-primary">
                     <span class="t-en">View projects</span>
                     <span class="t-es">Ver proyectos</span>
                 </a>
                 <a href="https://github.com/Aouei" target="_blank" class="btn btn-ghost">GitHub</a>
-                <a href="about.html" class="btn btn-ghost">
+                <a href="#about" class="btn btn-ghost">
                     <span class="t-en">About me</span>
                     <span class="t-es">Sobre mí</span>
                 </a>
             </div>
         </section>
+
+        <hr class="divider">
+
+        <!-- ── About ── -->
+        <section id="about">
+
+            <!-- Experience -->
+            <p class="section-label t-en">Experience</p>
+            <p class="section-label t-es">Experiencia</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>
+                        <span class="t-en">Technical Staff &mdash; Instituto de Ciencias Marinas de Andalucía (CSIC)</span>
+                        <span class="t-es">Personal Técnico &mdash; Instituto de Ciencias Marinas de Andalucía (CSIC)</span>
+                    </h3>
+                    <p class="t-en">Software development for UAV drone applications in marine remote sensing. Bathymetry workflows using UAV-derived and satellite-derived data. Developed Python packages for satellite imagery downloading, image processing, and Google Earth Engine integration.</p>
+                    <p class="t-es">Desarrollo de software para aplicaciones con drones UAV en teledetección marina. Flujos de trabajo batimétricos con datos UAV y satelitales. Desarrollo de paquetes Python para descarga de imágenes satelitales, procesamiento de imágenes e integración con Google Earth Engine.</p>
+                    <div class="card-meta">
+                        <span class="tag">Sep 2022 &mdash; Mar 2026</span>
+                        <span class="tag">Puerto Real, Cádiz</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Salesforce Developer &mdash; Omega CRM Consulting (Merkle)</h3>
+                    <p class="t-en">Database design and CRM development for nonprofit organizations including UNHCR and AECC.</p>
+                    <p class="t-es">Diseño de bases de datos y desarrollo CRM para organizaciones sin ánimo de lucro como ACNUR y AECC.</p>
+                    <div class="card-meta">
+                        <span class="tag">Oct 2021 &mdash; Jul 2022</span>
+                        <span class="tag">Granada, Spain</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <!-- Education -->
+            <p class="section-label t-en">Education</p>
+            <p class="section-label t-es">Educación</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>
+                        <span class="t-en">MS in Artificial Intelligence</span>
+                        <span class="t-es">Máster en Inteligencia Artificial</span>
+                    </h3>
+                    <p>Instituto Europeo de Posgrado</p>
+                    <div class="card-meta">
+                        <span class="tag">Oct 2024 &mdash; Nov 2025</span>
+                        <span class="tag">Madrid, Spain</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>
+                        <span class="t-en">BS in Computer Engineering</span>
+                        <span class="t-es">Grado en Ingeniería Informática</span>
+                    </h3>
+                    <p>University of Granada</p>
+                    <div class="card-meta">
+                        <span class="tag">Sep 2015 &mdash; Feb 2021</span>
+                        <span class="tag">Granada, Spain</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>
+                        <span class="t-en">Field Courses in Terrestrial &amp; Marine Environments</span>
+                        <span class="t-es">Cursos de campo en entornos terrestres y marinos</span>
+                    </h3>
+                    <p>CSIC, Spain</p>
+                    <div class="card-meta"><span class="tag">2023</span></div>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <!-- Skills -->
+            <p class="section-label t-en">Skills</p>
+            <p class="section-label t-es">Habilidades</p>
+
+            <div class="cards">
+                <div class="card" style="gap: 0.75rem;">
+                    <div>
+                        <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-en">Programming languages</p>
+                        <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-es">Lenguajes de programación</p>
+                        <div class="card-meta">
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-en">Tools</p>
+                        <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-es">Herramientas</p>
+                        <div class="card-meta">
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-en">ML &amp; Research</p>
+                        <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-es">IA e Investigación</p>
+                        <div class="card-meta">
+                            <span class="tag">Sklearn</span>
+                            <span class="tag">SDB</span>
+                            <span class="tag">UAV</span>
+                            <span class="tag">Remote Sensing</span>
+                            <span class="tag">Water Quality</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-en">Languages</p>
+                        <p style="font-size: 0.78rem; color: var(--muted); margin-bottom: 0.4rem;" class="t-es">Idiomas</p>
+                        <div class="card-meta">
+                            <span class="tag t-en">Spanish (native)</span>
+                            <span class="tag t-es">Español (nativo)</span>
+                            <span class="tag t-en">English (B2)</span>
+                            <span class="tag t-es">Inglés (B2)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <!-- Links -->
+            <p class="section-label t-en">Links</p>
+            <p class="section-label t-es">Enlaces</p>
+            <div class="card-links" style="margin-top: 0.5rem; font-size: 0.9rem;">
+                <a href="https://github.com/Aouei" target="_blank">&#x2197; GitHub</a>
+                <a href="https://orcid.org/0009-0003-9495-9625" target="_blank">&#x2197; ORCID</a>
+                <a href="https://www.linkedin.com/in/sergio-heredia-carmona-298713151/" target="_blank">&#x2197; LinkedIn</a>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- ── Softwares ── -->
+        <section id="softwares">
+            <p class="section-label">Open Source</p>
+            <h1>Softwares</h1>
+
+            <!-- Remote Sensing -->
+            <p class="section-label">Remote Sensing</p>
+            <h2 class="t-en">Python libraries and tools for geospatial analysis and remote sensing.</h2>
+            <h2 class="t-es">Librerías Python y herramientas para análisis geoespacial y teledetección.</h2>
+
+            <div class="cards">
+
+                <div class="card card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>gee_acolite</h3>
+                            <p class="card-why t-en">Make remote sensing more accessible by enabling cloud computing as an auxiliary way to process and analyze satellite images.</p>
+                            <p class="card-why t-es">Hacer de la teledetección más accesible permitiendo el cómputo en la nube como forma auxiliar de procesar y analizar imágenes de satélite.</p>
+                            <p class="t-en">ACOLITE atmospheric correction adapted for Google Earth Engine. Enables water quality analysis and remote sensing corrections directly in GEE workflows.</p>
+                            <p class="t-es">Corrección atmosférica ACOLITE adaptada para Google Earth Engine. Permite el análisis de calidad del agua y correcciones de teledetección directamente en flujos de trabajo GEE.</p>
+                            <div class="card-meta">
+                                <span class="tag">Python</span>
+                                <span class="tag">Remote Sensing</span>
+                                <span class="tag">Sentinel-2</span>
+                                <span class="tag">ACOLITE</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/Aouei/gee_acolite" target="_blank">&#x2197; GitHub</a>
+                                <a href="https://aouei.github.io/gee_acolite/" target="_blank">&#x2197; Docs</a>
+                            </div>
+                        </div>
+                        <div class="card-back"></div>
+                    </div>
+                </div>
+
+                <div class="card card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>remote-sensing-satellite-downloader</h3>
+                            <p class="card-why t-en">Unify access and download of satellite images from different APIs into a single interface.</p>
+                            <p class="card-why t-es">Unificar en una única interfaz el acceso y descarga de imágenes satelitales de diferentes APIs.</p>
+                            <p class="t-en">Python library to download satellite imagery (Sentinel-2, Landsat-8) using APIs like Copernicus OData. Simplifies data acquisition for remote sensing workflows.</p>
+                            <p class="t-es">Librería Python para descargar imágenes satelitales (Sentinel-2, Landsat-8) usando APIs como Copernicus OData. Simplifica la adquisición de datos para flujos de trabajo de teledetección.</p>
+                            <div class="card-meta">
+                                <span class="tag">Python</span>
+                                <span class="tag">Satellite Data</span>
+                                <span class="tag">Copernicus</span>
+                                <span class="tag">Sentinel-2</span>
+                                <span class="tag">Landsat-8</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/Aouei/remote-sensing-satellite-downloader" target="_blank">&#x2197; GitHub</a>
+                                <a href="https://aouei.github.io/remote-sensing-satellite-downloader/" target="_blank">&#x2197; Docs</a>
+                            </div>
+                        </div>
+                        <div class="card-back"></div>
+                    </div>
+                </div>
+
+                <div class="card card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>sensingpy</h3>
+                            <p class="card-why t-en">A simpler, more user-friendly alternative for handling spatial data and standardizing Satellite Derived Bathymetry (SDB).</p>
+                            <p class="card-why t-es">Alternativa más simple y user friendly para tratar con datos espaciales y estandarizar la aplicación de la Batimetría Derivada de Satélite (SDB).</p>
+                            <p class="t-en">Python library built on xarray and rasterio for GIS operations and Satellite Derived Bathymetry (SDB). Designed for processing and analyzing multispectral satellite data.</p>
+                            <p class="t-es">Librería Python basada en xarray y rasterio para operaciones GIS y Batimetría Derivada de Satélite (SDB). Diseñada para el procesamiento y análisis de datos satelitales multiespectrales.</p>
+                            <div class="card-meta">
+                                <span class="tag">Python</span>
+                                <span class="tag">GIS</span>
+                                <span class="tag">SDB</span>
+                                <span class="tag">Remote Sensing</span>
+                                <span class="tag">xarray</span>
+                                <span class="tag">rasterio</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/Aouei/sensingpy" target="_blank">&#x2197; GitHub</a>
+                                <a href="https://aouei.github.io/sensingpy/" target="_blank">&#x2197; Docs</a>
+                            </div>
+                        </div>
+                        <div class="card-back"></div>
+                    </div>
+                </div>
+
+                <div class="card card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>python_course</h3>
+                            <p class="card-why t-en">A simple way to give scientists access to Python programming.</p>
+                            <p class="card-why t-es">Una forma sencilla de dar acceso a los científicos a la programación con Python.</p>
+                            <p class="t-en">A Python tutorial for scientists in Spanish. Covers fundamentals through scientific tools like NumPy, Pandas, and data visualization.</p>
+                            <p class="t-es">Un tutorial de Python para científicos en español. Cubre desde conceptos básicos hasta herramientas científicas como NumPy, Pandas y visualización de datos.</p>
+                            <div class="card-meta">
+                                <span class="tag nb">Jupyter</span>
+                                <span class="tag t-en">Education</span>
+                                <span class="tag t-es">Educación</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/Aouei/python_course" target="_blank">&#x2197; GitHub</a>
+                                <a href="https://aouei.github.io/python_course/" target="_blank">&#x2197; Docs</a>
+                            </div>
+                        </div>
+                        <div class="card-back"></div>
+                    </div>
+                </div>
+
+                <div class="card card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Physics-informed-ML-ODW</h3>
+                            <p class="card-why t-en">Study the applicability of ML techniques to SDB and ODW, combining ML models with physical models.</p>
+                            <p class="card-why t-es">Estudio de la aplicabilidad de técnicas de ML sobre SDB y ODW combinando modelos de ML con modelos físicos.</p>
+                            <p class="t-en">Exploration of physics-informed machine learning methods applied to oceanographic and environmental data workflows.</p>
+                            <p class="t-es">Exploración de métodos de aprendizaje automático informados por física aplicados a flujos de datos oceanográficos y medioambientales.</p>
+                            <div class="card-meta">
+                                <span class="tag nb">Jupyter</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Physics-informed</span>
+                                <span class="tag">SDB</span>
+                                <span class="tag">ODW</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/Aouei/Physics-informed-ML-ODW" target="_blank">&#x2197; GitHub</a>
+                                <a href="https://aouei.github.io/Physics-informed-ML-ODW/" target="_blank">&#x2197; Docs</a>
+                            </div>
+                        </div>
+                        <div class="card-back"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="divider">
+
+            <!-- Games -->
+            <p class="section-label">Games</p>
+            <h2 class="t-en">Python tools for game development.</h2>
+            <h2 class="t-es">Herramientas Python para desarrollo de videojuegos.</h2>
+
+            <div class="cards">
+
+                <div class="card card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>tiledpy</h3>
+                            <p class="card-why t-en">A simple and direct way to read Tiled map metadata without depending on Pygame.</p>
+                            <p class="card-why t-es">Forma sencilla y directa de recoger los metadatos de un mapa con Tiled sin depender directamente de Pygame.</p>
+                            <p class="t-en">Python library to load maps created with the Tiled editor for use in games built with Pygame. Simplifies tilemap integration into game projects.</p>
+                            <p class="t-es">Librería Python para cargar mapas creados con el editor Tiled para su uso en juegos desarrollados con Pygame. Simplifica la integración de tilemaps en proyectos de juego.</p>
+                            <div class="card-meta">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pygame</span>
+                                <span class="tag">Tiled</span>
+                                <span class="tag">pillow</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="https://github.com/Aouei/tiledpy" target="_blank">&#x2197; GitHub</a>
+                                <a href="https://aouei.github.io/tiledpy/" target="_blank">&#x2197; Docs</a>
+                            </div>
+                        </div>
+                        <div class="card-back"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- ── Research ── -->
+        <section id="research">
+            <p class="section-label t-en">Publications</p>
+            <p class="section-label t-es">Publicaciones</p>
+
+            <h1 class="t-en">Research</h1>
+            <h1 class="t-es">Investigación</h1>
+
+            <h2 class="t-en">Peer-reviewed publications and scientific work.</h2>
+            <h2 class="t-es">Publicaciones científicas revisadas por pares.</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Enhancing Georeferencing and Mosaicking Techniques over Water Surfaces with High-Resolution Unmanned Aerial Vehicle (UAV) Imagery</h3>
+                    <p>Alejandro Román, <strong>Sergio Heredia</strong>, Anna E. Windle, Antonio Tovar-Sánchez, Gabriel Navarro</p>
+                    <p style="margin-top: 0.3rem;"><em>Remote Sensing</em> &mdash; 2024</p>
+                    <div class="card-meta">
+                        <span class="tag t-en">Published</span>
+                        <span class="tag t-es">Publicado</span>
+                        <span class="tag">UAV</span>
+                        <span class="tag">Remote Sensing</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://doi.org/10.3390/rs16020290" target="_blank">&#x2197; DOI: 10.3390/rs16020290</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Comparative assessment of bathymetric methods using unmanned aerial vehicle (UAV) high-resolution multispectral imaging</h3>
+                    <p>S. P. Viaña-Borja, <strong>S. Heredia</strong>, G. Navarro, X. Santamarta-Benito, N. Araujo-Suarez, I. Caballero</p>
+                    <p style="margin-top: 0.3rem;"><em>Coastal Engineering</em> &mdash; 2025</p>
+                    <div class="card-meta">
+                        <span class="tag t-en">Published</span>
+                        <span class="tag t-es">Publicado</span>
+                        <span class="tag">UAV</span>
+                        <span class="tag t-en">Bathymetry</span>
+                        <span class="tag t-es">Batimetría</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://doi.org/10.1016/j.coastaleng.2025.104854" target="_blank">&#x2197; DOI: 10.1016/j.coastaleng.2025.104854</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Recursive Bathymetric Mapping of Tidal Inlets Using Sentinel-2</h3>
+                    <p>Isabel Caballero, <strong>Sergio Heredia</strong>, Susana Costas, Richard P. Stumpf</p>
+                    <div class="card-meta">
+                        <span class="tag t-en">Under Review</span>
+                        <span class="tag t-es">En revisión</span>
+                        <span class="tag">Sentinel-2</span>
+                        <span class="tag t-en">Bathymetry</span>
+                        <span class="tag t-es">Batimetría</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Bathymetric mapping of intertidal flats using the Sentinel-2A/B/C satellites to support shellfish harvesting</h3>
+                    <p>Isabel Caballero, <strong>Sergio Heredia</strong>, Irene Alejo, Nicolás Villacieros-Robineau, Miguel Ángel Nombela, Rita González-Villanueva</p>
+                    <div class="card-meta">
+                        <span class="tag t-en">Under Review</span>
+                        <span class="tag t-es">En revisión</span>
+                        <span class="tag">Sentinel-2</span>
+                        <span class="tag t-en">Intertidal</span>
+                        <span class="tag t-es">Intermareal</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Physics-informed machine learning for optically deep-water detection using Sentinel-2</h3>
+                    <p><strong>Sergio Heredia</strong>, Paola Barba-Ceballos, Isabel Caballero</p>
+                    <div class="card-meta">
+                        <span class="tag t-en">Under Review</span>
+                        <span class="tag t-es">En revisión</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Physics-informed</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="divider">
+
+            <p class="section-label t-en">Highlights</p>
+            <p class="section-label t-es">Destacados</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>ESA Living Planet Symposium</h3>
+                    <p class="t-en">Poster presenter &mdash; Vienna, Austria</p>
+                    <p class="t-es">Presentación de póster &mdash; Viena, Austria</p>
+                    <div class="card-meta"><span class="tag">2025</span></div>
+                </div>
+                <div class="card">
+                    <h3>
+                        <span class="t-en">SDB with Python &mdash; Invited Talk</span>
+                        <span class="t-es">SDB con Python &mdash; Charla invitada</span>
+                    </h3>
+                    <p>University of Santiago, Chile</p>
+                    <div class="card-meta"><span class="tag">2025</span></div>
+                </div>
+                <div class="card">
+                    <h3>
+                        <span class="t-en">Research Stay &mdash; SDB Techniques</span>
+                        <span class="t-es">Estancia de investigación &mdash; Técnicas SDB</span>
+                    </h3>
+                    <p>University of Vigo, Spain</p>
+                    <div class="card-meta"><span class="tag">2025</span></div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="static/main.js"></script>
